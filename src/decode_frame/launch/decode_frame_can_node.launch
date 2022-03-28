@@ -1,0 +1,12 @@
+<launch>
+ 
+    <node pkg="socketcan_bridge" name="topic_to_socketcan_node" type="topic_to_socketcan_node" output="screen">
+    </node>
+ 
+    <node pkg="socketcan_bridge" name="socketcan_to_topic_node" type="socketcan_to_topic_node" output="screen">
+    </node>
+
+    <node pkg="decodeframe" type="decodeframe_node" name="decodeframe_node" args="" output="screen" >
+    </node>
+ 
+</launch>
